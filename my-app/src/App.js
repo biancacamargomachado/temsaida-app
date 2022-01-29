@@ -1,4 +1,9 @@
 import logo from './logo.svg';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import Typography from '@mui/material/Typography';
 import './App.css';
 
 function App() {
@@ -17,6 +22,9 @@ function App() {
         >
           Learn React
         </a>
+        <Typography variant="h1" component="div" gutterBottom>
+        H1 Typography
+      </Typography>
       </header>
     </div>
   );
