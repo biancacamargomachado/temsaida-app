@@ -18,8 +18,30 @@ import '../App.css';
 
 
 function Main() {
+  const [status, setStatus] = React.useState(false);
+  const [done, setDone] = React.useState(false);
 
   const customButtonStyle = { height: 52, textAlign: 'left', alignItems: 'left', justifyContent: 'left' };
+
+  React.useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => {
+        setDone(true);
+      }, 1500);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
+  const returnStatus = React.useCallback(() => {
+
+    if (done)
+      return <img alt="Situação do pedido do ofício: não solicitado" src="https://res.cloudinary.com/app-temsaida/image/upload/v1643540931/status-3_sy1hdt.png" />
+
+    if (status)
+     return <img alt="Situação do pedido do ofício: não solicitado" src="https://res.cloudinary.com/app-temsaida/image/upload/v1643540588/status2_ufum6n.png" />;
+    else
+        return <img alt="Situação do pedido do ofício: não solicitado" src="https://res.cloudinary.com/app-temsaida/image/upload/v1643538285/status-1_yximjq.png" />;
+  }, [status, done]);
 
   return (
     <div className="App">
@@ -38,9 +60,9 @@ function Main() {
 
         <ThemeProvider theme={innerTheme}>
           <div style={{ width: 310 }}>
-            <img alt="Situação do pedido do ofício: não solicitado" src="https://res.cloudinary.com/app-temsaida/image/upload/v1643538285/status-1_yximjq.png" />
+            {returnStatus()}
             <Stack direction="column" spacing={2}>
-                <Button style={customButtonStyle} startIcon={<Inventory2Icon />} variant="contained">
+                <Button disabled={status} onClick={() => setStatus(!status)} style={customButtonStyle} startIcon={<Inventory2Icon />} variant="contained">
                   Solicitar Ofício
                 </Button>
                 <Button style={customButtonStyle} startIcon={<DownloadIcon />} variant="contained">

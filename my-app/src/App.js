@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import theme from './utils/theme';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
 import './App.css';
 
 
@@ -17,8 +18,8 @@ function App() {
       <div className='header' />
       <ThemeProvider theme={theme}>
         <Stack className='stackButton' spacing={2} direction="column">
-          <Button className='button' variant="contained">Quero me cadastrar</Button>
-          <Button className='button' variant="outlined">ACESSAR PERFIL</Button>
+          <Link style={{ textDecoration: 'none' }} to="/signin"><Button className='button' variant="contained">Quero me cadastrar</Button></Link>
+          <Link style={{ textDecoration: 'none' }} to="/login"><Button className='button' variant="outlined">ACESSAR PERFIL</Button></Link>
         </Stack>
         <Box sx={{ width: '100%', maxWidth: 350, padding: '5%' }}>
           <Typography className='title' variant="h6" component="div" gutterBottom>APOIADORES:</Typography>

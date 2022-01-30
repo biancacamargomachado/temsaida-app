@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import theme, { innerTheme } from '../utils/theme';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
 import '../App.css';
 
 
@@ -31,7 +32,7 @@ function Login() {
             </ThemeProvider>
           </div>
           <div style={{ marginBottom: '10%'}}>
-            <Button className='button' variant='contained'>ACESSAR</Button>
+            <Link style={{ textDecoration: 'none' }} to="/main"><Button className='button' variant='contained'>ACESSAR</Button></Link>
           </div>
 
           <div style={{ marginBottom: '10%'}}>
