@@ -1,0 +1,23 @@
+.header-img-container {
+  padding-top: 10px;
+  background-color: rgba(103, 80, 164, 0.08);
+  width: 100%;
+}
+
+.header-custom {
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #F4F4F4;
+  background-color: #461D6C;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.header-custom h4 {
+  max-width: 80%;
+}

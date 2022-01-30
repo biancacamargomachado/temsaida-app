@@ -6,7 +6,6 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Checkbox from '@mui/material/Checkbox';
 import theme from './utils/theme';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -20,7 +19,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Stack className='stackButton' spacing={2} direction="column">
           <Button className='button' variant="contained">Quero me cadastrar</Button>
-          <Button className='button' variant="outlined">Quero me cadastrar</Button>
+          <Button className='button' variant="outlined">ACESSAR PERFIL</Button>
         </Stack>
         <Box sx={{ width: '100%', maxWidth: 350, padding: '5%' }}>
           <Typography className='title' variant="h6" component="div" gutterBottom>APOIADORES:</Typography>
