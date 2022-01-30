@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import './App.css';
 
 
-function App() {
+function Success() {
   return (
     <div className="App" >
       <div className='header' />
@@ -44,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default Success;

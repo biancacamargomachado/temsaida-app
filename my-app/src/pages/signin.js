@@ -114,7 +114,7 @@ function SignIn() {
         </div>
 
         <div className='lastButton'>
-          <Button className='button' variant="contained">SAIBA MAIS</Button>
+          <Button className='button' variant="contained">CADASTRAR</Button>
         </div>
       </ThemeProvider>
      </div>
