@@ -33,6 +33,9 @@ function App() {
         <Checkbox defaultChecked />
       </ThemeProvider>
       </header>
+      <>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Centro%20de%20Atendimento%20%C3%80%20mulher,%20S%C3%A3o%20Paulo%20SP&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+      </>
     </div>
   );
 }
