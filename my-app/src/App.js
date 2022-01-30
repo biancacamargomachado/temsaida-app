@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import './App.css';
 
 
-function Success() {
+function App() {
   return (
     <div className="App" >
       <div className='header' />
@@ -38,9 +38,8 @@ function Success() {
           <Button className='button' variant="contained">SAIBA MAIS</Button>
         </div>
       </ThemeProvider>
-        {/* <div className="mapouter"><div class="gmap_canvas"><iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=Centro%20de%20Atendimento%20%C3%80%20mulher,%20S%C3%A3o%20Paulo%20SP&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div> */}
     </div>
   );
 }
 
-export default Success;
+export default App;

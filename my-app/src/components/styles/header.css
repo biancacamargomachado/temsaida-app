@@ -18,6 +18,19 @@
   margin-bottom: 5%;
 }
 
+.header-custom-main {
+  display: flex;
+  min-height: 60px;
+  justify-content: stretch;
+  width: 100%;
+  color: #F4F4F4;
+  background-color: #461D6C;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
 .header-custom h4 {
   max-width: 80%;
 }

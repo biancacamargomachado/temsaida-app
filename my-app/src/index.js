@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import PdfPage from './pages/pdf-page';
+import Main from './pages/main';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <PdfPage />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
