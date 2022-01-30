@@ -16,6 +16,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import '../components/styles/header.css';
 import Checkbox from '@mui/material/Checkbox';
+import { Link } from "react-router-dom";
 import '../App.css';
 
 
@@ -36,7 +37,9 @@ function SignIn() {
     <div className="App" >
       <ThemeProvider theme={theme}>
         <div className='header-img-container'>
-          <img alt="Logo tem saida" src="https://res.cloudinary.com/app-temsaida/image/upload/v1643525901/logo-xs_am5u1k.png" />
+          <Link style={{ textDecoration: 'none' }} to="/">
+            <img alt="Logo tem saida" src="https://res.cloudinary.com/app-temsaida/image/upload/v1643525901/logo-xs_am5u1k.png" />
+          </Link>
         </div>
         <div className='header-custom'>
           <h4>PREENCHA OS DADOS PARA REALIZAR O CADASTRO</h4>
@@ -114,7 +117,9 @@ function SignIn() {
         </div>
 
         <div className='lastButton'>
-          <Button className='button' variant="contained">CADASTRAR</Button>
+          <Link style={{ textDecoration: 'none' }} to="/main">
+            <Button className='button' variant="contained">CADASTRAR</Button>
+          </Link>
         </div>
       </ThemeProvider>
      </div>

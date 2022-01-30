@@ -16,7 +16,7 @@ function Router() {
         <Route path="success" element={<Success />} />
         <Route path="login" element={<Login />} />
         <Route path="pdf-page" element={<PdfPage />} />
-        <Route path="Main" element={<Main />} />
+        <Route path="main" element={<Main />} />
       </Routes>
   );
 }

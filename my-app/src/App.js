@@ -15,7 +15,7 @@ import './App.css';
 function App() {
   return (
     <div className="App" >
-      <div className='header' />
+      <div className='header'><Link style={{ textDecoration: 'none' }} to="/"></Link></div>
       <ThemeProvider theme={theme}>
         <Stack className='stackButton' spacing={2} direction="column">
           <Link style={{ textDecoration: 'none' }} to="/signin"><Button className='button' variant="contained">Quero me cadastrar</Button></Link>
@@ -36,7 +36,7 @@ function App() {
         <img alt="Passos para se cadastrar na plataforma: cadatrar, solicitar ofício, gerar currículo, receber " src="https://res.cloudinary.com/app-temsaida/image/upload/v1643523513/steps_wkvzkp.png" />
         
         <div className='lastButton'>
-          <Button className='button' variant="contained">SAIBA MAIS</Button>
+          <Link style={{ textDecoration: 'none' }} to="/pdf-page"><Button className='button' variant="contained">SAIBA MAIS</Button></Link>
         </div>
       </ThemeProvider>
     </div>

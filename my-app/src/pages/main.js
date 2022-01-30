@@ -13,6 +13,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
+import { Link } from "react-router-dom";
 import '../components/styles/header.css';
 import '../App.css';
 
@@ -47,7 +48,9 @@ function Main() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <div className='header-img-container'>
-          <img alt="Logo tem saida" src="https://res.cloudinary.com/app-temsaida/image/upload/v1643525901/logo-xs_am5u1k.png" />
+          <Link style={{ textDecoration: 'none' }} to="/">
+            <img alt="Logo tem saida" src="https://res.cloudinary.com/app-temsaida/image/upload/v1643525901/logo-xs_am5u1k.png" />
+          </Link>
         </div>
         <div className='header-custom-main'>
           <div style={{ padding: 5 }}>
