@@ -69,7 +69,7 @@ function Main() {
                   Solicitar Ofício
                 </Button>
                 <Button style={customButtonStyle} startIcon={<DownloadIcon />} variant="contained">
-                  <a href="https://res.cloudinary.com/app-temsaida/image/upload/v1643541647/curriculo-maria_ljazct.png" target='_blank' rel="noreferrer">Criar Currículo</a>
+                  <a alt="Criar Currículo" href="https://res.cloudinary.com/app-temsaida/image/upload/v1643541647/curriculo-maria_ljazct.png" target='_blank' rel="noreferrer">Criar Currículo</a>
                 </Button>
                 <Button style={customButtonStyle} startIcon={<EditIcon />} variant="contained">
                   Editar Dados

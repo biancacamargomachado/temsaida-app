@@ -117,7 +117,7 @@ function SignIn() {
         </div>
 
         <div className='lastButton'>
-          <Link style={{ textDecoration: 'none' }} to="/main">
+          <Link style={{ textDecoration: 'none' }} to="/success">
             <Button className='button' variant="contained">CADASTRAR</Button>
           </Link>
         </div>
